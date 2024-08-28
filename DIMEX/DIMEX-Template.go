@@ -23,7 +23,6 @@ import (
 	"SD/PP2PLink"
 	"fmt"
 	"strings"
-	"time"
 )
 
 // ------------------------------------------------------------------------------------
@@ -144,21 +143,18 @@ func (module *DIMEX_Module) handleUponReqEntry() {
 		    			estado := queroSC
 	*/
 
-	//fmt.Println("OTHER ADDRESSES ARE", otherAddresses)
+	module.lcl++
+	module.reqTs = module.lcl
+	module.nbrResps = 0
 
-	message := fmt.Sprintf("from:%d msgType:%s timestamp:%d", module.id, "reqEntry", module.lcl)
+	message := fmt.Sprintf("from:%d msgType:%s timestamp:%d", module.id, "reqEntry", module.reqTs)
 
 	for index, address := range module.addresses {
 		if index != module.id {
-			fmt.Println("SENT MESSAGE TO", address)
 			module.sendToLink(address, message, module.addresses[module.id])
 		}
 	}
-
 	module.st = wantMX
-	module.reqTs = int(time.Now().Unix())
-	module.lcl++
-	module.nbrResps = 0
 }
 
 func (module *DIMEX_Module) handleUponReqExit() {
@@ -170,12 +166,8 @@ func (module *DIMEX_Module) handleUponReqExit() {
 							waiting := {}
 	*/
 
-	fmt.Println("PROCESSO INFORMA EXIT")
-	fmt.Println("PROCESSOS AGUARDANDO", module.waiting)
-
 	for index, address := range module.addresses {
 		if module.waiting[index] && module.id != index {
-			fmt.Println("PROCESSO SAIU: SENDING respOK TO", address)
 			module.sendToLink(address, "respOK", module.addresses[module.id])
 		}
 	}
@@ -201,9 +193,7 @@ func (module *DIMEX_Module) handleUponDeliverRespOk(msgOutro PP2PLink.PP2PLink_I
 	*/
 
 	module.nbrResps++
-	fmt.Println("RECEIVED respOk:", module.nbrResps)
 	if module.nbrResps == len(module.addresses)-1 { //todos os outros processos responderam
-		fmt.Println("ENTERED MX")
 		module.st = inMX
 		module.Ind <- dmxResp{}
 	}
@@ -223,8 +213,6 @@ func (module *DIMEX_Module) handleUponDeliverReqEntry(msgOutro PP2PLink.PP2PLink
 		     					lts.ts := max(lts.ts, rts.ts)
 	*/
 
-	fmt.Println("RECEIVED reqEntry from", msgOutro.From)
-
 	var otherTs int
 	var otherId int
 
@@ -234,16 +222,15 @@ func (module *DIMEX_Module) handleUponDeliverReqEntry(msgOutro PP2PLink.PP2PLink
 		return
 	}
 
-	if module.st == noMX || (module.st == wantMX && before(otherId, otherTs, module.id, module.lcl)) { //se o processo nao quer a mx ou o outro tem prioridade
+	if module.st == noMX || (module.st == wantMX && before(otherId, otherTs, module.id, module.reqTs)) { //se o processo nao quer a mx ou o outro tem prioridade
 		module.sendToLink(module.addresses[otherId], "respOK", module.addresses[module.id])
 
-	} else if module.st == inMX || (module.st == wantMX && before(module.id, module.lcl, otherId, otherTs)) { //se o processo está na mx ou se tem prioridade
+	} else if module.st == inMX || (module.st == wantMX && before(module.id, module.reqTs, otherId, otherTs)) { //se o processo está na mx ou se tem prioridade
 		module.waiting[otherId] = true
-		module.lcl = max(module.lcl, otherTs)
 
 	}
 
-	fmt.Println("REQENTRY: WAITING", module.waiting)
+	module.lcl = max(module.lcl, otherTs)
 }
 
 // ------------------------------------------------------------------------------------
