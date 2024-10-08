@@ -22,6 +22,8 @@ package DIMEX
 import (
 	"SD/PP2PLink"
 	"fmt"
+	"os"
+	"strconv"
 	"strings"
 )
 
@@ -36,10 +38,24 @@ const (
 	inMX
 )
 
+func (s State) String() string {
+	switch s {
+	case noMX:
+		return "noMX"
+	case wantMX:
+		return "wantMX"
+	case inMX:
+		return "inMX"
+	default:
+		return "Unknown"
+	}
+}
+
 type dmxReq int // enumeracao dos estados possiveis de um processo
 const (
 	ENTER dmxReq = iota
 	EXIT
+	SNAPSHOT
 )
 
 type dmxResp struct { // mensagem do módulo DIMEX infrmando que pode acessar - pode ser somente um sinal (vazio)
@@ -47,16 +63,20 @@ type dmxResp struct { // mensagem do módulo DIMEX infrmando que pode acessar - 
 }
 
 type DIMEX_Module struct {
-	Req       chan dmxReq  // canal para receber pedidos da aplicacao (REQ e EXIT)
-	Ind       chan dmxResp // canal para informar aplicacao que pode acessar
-	addresses []string     // endereco de todos, na mesma ordem
-	id        int          // identificador do processo - é o indice no array de enderecos acima
-	st        State        // estado deste processo na exclusao mutua distribuida
-	waiting   []bool       // processos aguardando tem flag true
-	lcl       int          // relogio logico local
-	reqTs     int          // timestamp local da ultima requisicao deste processo
-	nbrResps  int
-	dbg       bool
+	Req                    chan dmxReq  // canal para receber pedidos da aplicacao (REQ e EXIT)
+	Ind                    chan dmxResp // canal para informar aplicacao que pode acessar
+	addresses              []string     // endereco de todos, na mesma ordem
+	id                     int          // identificador do processo - é o indice no array de enderecos acima
+	st                     State        // estado deste processo na exclusao mutua distribuida
+	waiting                []bool       // processos aguardando tem flag true
+	lcl                    int          // relogio logico local
+	reqTs                  int          // timestamp local da ultima requisicao deste processo
+	nbrResps               int
+	dbg                    bool
+	takingSnapshot         bool
+	messagesDuringSnapshot []string
+	snapshotReceived       []bool
+	snapshotId             int
 
 	Pp2plink *PP2PLink.PP2PLink // acesso aa comunicacao enviar por PP2PLinq.Req  e receber por PP2PLinq.Ind
 }
@@ -73,13 +93,17 @@ func NewDIMEX(_addresses []string, _id int, _dbg bool) *DIMEX_Module {
 		Req: make(chan dmxReq, 1),
 		Ind: make(chan dmxResp, 1),
 
-		addresses: _addresses,
-		id:        _id,
-		st:        noMX,
-		waiting:   make([]bool, len(_addresses)),
-		lcl:       0,
-		reqTs:     0,
-		dbg:       _dbg,
+		addresses:              _addresses,
+		id:                     _id,
+		st:                     noMX,
+		waiting:                make([]bool, len(_addresses)),
+		lcl:                    0,
+		reqTs:                  0,
+		dbg:                    _dbg,
+		takingSnapshot:         false,
+		messagesDuringSnapshot: make([]string, len(_addresses)),
+		snapshotReceived:       make([]bool, len(_addresses)),
+		snapshotId:             0,
 
 		Pp2plink: p2p}
 
@@ -108,6 +132,10 @@ func (module *DIMEX_Module) Start() {
 				} else if dmxR == EXIT {
 					module.outDbg("app libera mx")
 					module.handleUponReqExit() // ENTRADA DO ALGORITMO
+				} else if dmxR == SNAPSHOT {
+					if !module.takingSnapshot {
+						module.handleUponReqSnapshot() // ENTRADA DO ALGORITMO
+					}
 				}
 
 			case msgOutro := <-module.Pp2plink.Ind: // vindo de outro processo
@@ -119,7 +147,20 @@ func (module *DIMEX_Module) Start() {
 				} else if strings.Contains(msgOutro.Message, "reqEntry") {
 					module.outDbg("          <<<---- pede??  " + msgOutro.Message)
 					module.handleUponDeliverReqEntry(msgOutro) // ENTRADA DO ALGORITMO
+				} else if strings.Contains(msgOutro.Message, "takeSnapshot") {
+					module.outDbg("          <<<---- takeSnapshot??  " + msgOutro.Message)
+					module.handleUponDeliveryReqSnapshot(msgOutro) // ENTRADA DO ALGORITMO
+				}
 
+				if module.takingSnapshot {
+					if !strings.Contains(msgOutro.Message, "takeSnapshot") {
+						var fromId int
+						fmt.Sscanf(msgOutro.Message, "from:%d msgType:%s timestamp:%d", &fromId, new(string), new(string))
+						fmt.Println("Received message from process ", fromId, " during snapshot", !module.snapshotReceived[fromId], module.snapshotId)
+						if !module.snapshotReceived[fromId] {
+							module.messagesDuringSnapshot[fromId] = module.messagesDuringSnapshot[fromId] + ", " + msgOutro.Message
+						}
+					}
 				}
 			}
 		}
@@ -174,6 +215,19 @@ func (module *DIMEX_Module) handleUponReqExit() {
 
 	module.st = noMX
 	clear(module.waiting)
+}
+
+func (module *DIMEX_Module) handleUponReqSnapshot() {
+	module.takingSnapshot = true
+	//TODO: Ver se as infos como, lcl, st, waiting tem que ser gravadas no snapshot antes ou depois
+	//de receber as mensagens de take snapshot dos outros processos
+	for index, address := range module.addresses {
+		if module.id != index {
+			message := fmt.Sprintf("from:%d msgType:%s timestamp:%d", module.id, "takeSnapshot", module.reqTs)
+			module.sendToLink(address, message, module.addresses[module.id])
+		}
+	}
+	module.snapshotReceived[module.id] = true
 }
 
 // ------------------------------------------------------------------------------------
@@ -231,6 +285,50 @@ func (module *DIMEX_Module) handleUponDeliverReqEntry(msgOutro PP2PLink.PP2PLink
 	}
 
 	module.lcl = max(module.lcl, otherTs)
+}
+
+func (module *DIMEX_Module) handleUponDeliveryReqSnapshot(msgOutro PP2PLink.PP2PLink_Ind_Message) {
+	var fromId int
+	var fromTs int
+
+	fmt.Sscanf(msgOutro.Message, "from:%d msgType:%s timestamp:%d", &fromId, new(string), &fromTs)
+
+	if module.takingSnapshot {
+		module.snapshotReceived[fromId] = true
+		allReceived := true
+		for i := 0; i < len(module.snapshotReceived); i++ {
+			if !module.snapshotReceived[i] {
+				allReceived = false
+				break
+			}
+		}
+		if allReceived {
+			file, err := os.OpenFile("snapshot"+strconv.Itoa(module.id)+".txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+			if err != nil {
+				fmt.Println("Error creating file:", err)
+				return
+			}
+			defer file.Close()
+			file.WriteString("-------Snapshot-------\n")
+			file.WriteString("Snapshot ID: " + strconv.Itoa(module.snapshotId) + "\n")
+			file.WriteString("Process ID: " + strconv.Itoa(module.id) + "\n")
+			file.WriteString("lcl: " + strconv.Itoa(module.lcl) + "\n")
+			file.WriteString("Status: " + module.st.String() + "\n")
+			file.WriteString("Waiting: " + fmt.Sprint(module.waiting) + "\n")
+			file.WriteString("Messages received during Sanpshot\n")
+			for i := 0; i < len(module.messagesDuringSnapshot); i++ {
+				file.WriteString("  Process " + strconv.Itoa(i) + ": " + module.messagesDuringSnapshot[i] + "\n")
+			}
+			file.WriteString("-------End Snapshot-------\n\n")
+			module.snapshotId++
+			module.takingSnapshot = false
+			module.messagesDuringSnapshot = make([]string, len(module.addresses))
+			module.snapshotReceived = make([]bool, len(module.addresses))
+		}
+	} else {
+		module.snapshotReceived[fromId] = true
+		module.handleUponReqSnapshot()
+	}
 }
 
 // ------------------------------------------------------------------------------------

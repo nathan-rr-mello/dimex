@@ -63,8 +63,16 @@ func main() {
 
 	// espera para facilitar inicializacao de todos processos (a mao)
 	time.Sleep(10 * time.Second)
-
+	lastTime := time.Now()
+	fmt.Println("[ APP id: ", id, " INICIOU ]", lastTime)
 	for {
+		// MANDA FAZER UM SNAPSHOT A CADA 10 ms e apenas o processo 0 pode mandar fazer snapshot
+		if time.Since(lastTime) > 10*time.Millisecond && id == 0 {
+			lastTime = time.Now()
+			fmt.Println("[ APP id: ", id, " FAZ SNAPSHOT ]")
+			dmx.Req <- DIMEX.SNAPSHOT
+		}
+
 		// SOLICITA ACESSO AO DIMEX
 		fmt.Println("[ APP id: ", id, " PEDE   MX ]")
 		dmx.Req <- DIMEX.ENTER
