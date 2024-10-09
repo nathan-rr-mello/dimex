@@ -289,7 +289,7 @@ func (module *DIMEX_Module) handleUponDeliverReqEntry(msgOutro PP2PLink.PP2PLink
 
 	if module.st == noMX || (module.st == wantMX && (module.reqTs > otherTs || (module.reqTs == otherTs && module.id > otherId))) { //se o processo nao quer a mx ou o outro tem prioridade
 		module.sendToLink(module.addresses[otherId], "respOK", module.addresses[module.id])
-	} else if module.st == inMX || (module.st == wantMX && (module.reqTs < otherTs)) { //se o processo está na mx ou se tem prioridade
+	} else if module.st == inMX || (module.st == wantMX && (module.reqTs < otherTs || (module.reqTs == otherTs && module.id < otherId))) { //se o processo está na mx ou se tem prioridade
 		module.waiting[otherId] = true
 	}
 
