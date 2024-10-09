@@ -66,7 +66,7 @@ func main() {
 	lastTime := time.Now()
 
 	for {
-		// MANDA FAZER UM SNAPSHOT A CADA 10 ms e apenas o processo 0 pode mandar fazer snapshot
+		// MANDA FAZER UM SNAPSHOT A CADA 50 ms e apenas o processo 0 pode mandar fazer snapshot
 		if time.Since(lastTime) > 50*time.Millisecond && id == 0 {
 			lastTime = time.Now()
 			fmt.Println("[ APP id: ", id, " FAZ SNAPSHOT ]")

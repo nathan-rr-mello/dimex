@@ -42,10 +42,10 @@ def inv1(snapshotsProcessList):
         for snapshot in snapshotList:
             if snapshot["status"] == "inMX":
                 if snapshot["snapshot_id"] in in_mx_snapshots_ids:
-                    print("Error: Two snapshots with the same snapshot id are inMx: " + snapshot["snapshot_id"])
+                    print("Erro na inv1: Dois processos estão na SC no mesmo snapshot id: " + snapshot["snapshot_id"])
                     return
                 in_mx_snapshots_ids.add(snapshot["snapshot_id"])
-    print("Invariant 1 is satisfied")
+    print("Invariant 1 satisfeita")
 
 #  se todos processos estão em "não quero a SC", então todos waitings tem que ser falsos e não deve haver mensagens
 def inv2(snapshotsProcessList):
@@ -58,14 +58,15 @@ def inv2(snapshotsProcessList):
                 break
         if all_no_mx:
             for snapshotList in snapshotsProcessList:
-                if snapshotList[i]["waiting"] != [False, False, False]:
-                    print("Error: All processes are not in MX but waiting is not false for snapshot id: " + snapshotList[i]["snapshot_id"])
-                    return
+                for waiting in snapshotList[i]["waiting"]:
+                    if waiting == True:
+                        print("Erro na inv2: Todos os processos estão em 'não quero a SC' mas algum processo possui waiting true para snapshot id: " + snapshotList[i]["snapshot_id"])
+                        return
                 for process_id in snapshotList[i]["messages"]:
                     if len(snapshotList[i]["messages"][process_id]) != 0:
-                        print("Error: All processes are not in MX but there are messages for snapshot id: " + snapshotList[i]["snapshot_id"])
+                        print("Erro na inv2: Todos os processos estão em 'não quero a SC' mas algum processo possui mensagens em seu canal para snapshot id: " + snapshotList[i]["snapshot_id"])
                         return
-    print("Invariant 2 is satisfied")
+    print("Invariant 2 satisfeita")
 
 # se um processo q está marcado como waiting em p, então p está na SC ou quer a SC
 def inv3(snapshotsProcessList):
@@ -74,9 +75,9 @@ def inv3(snapshotsProcessList):
             for value in snapshot["waiting"]:
                 if value == True:
                     if snapshot["status"] == "noMX":
-                        print("Error: Some processes are waiting but not in MX for snapshot id: " + snapshot["snapshot_id"])
+                        print("Erro na inv3: Algum processo que 'não quer SC' está esperando algum outro processo para snapshot id: " + snapshot["snapshot_id"])
                         return
-    print("Invariant 3 is satisfied")
+    print("Invariant 3 satisfeita")
                 
 
 def main():
