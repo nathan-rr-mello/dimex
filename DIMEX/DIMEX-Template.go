@@ -319,6 +319,19 @@ func (module *DIMEX_Module) handleUponDeliveryReqSnapshot(msgOutro PP2PLink.PP2P
 				return
 			}
 			defer file.Close()
+
+			fmt.Print("-------Snapshot-------\n")
+			fmt.Print("Snapshot ID: " + strconv.Itoa(snapshot.snapshotId) + "\n")
+			fmt.Print("Process ID: " + strconv.Itoa(module.id) + "\n")
+			fmt.Print("lcl: " + strconv.Itoa(snapshot.lcl) + "\n")
+			fmt.Print("Status: " + snapshot.st.String() + "\n")
+			fmt.Print("Waiting: " + fmt.Sprint(snapshot.waiting) + "\n")
+			fmt.Print("Messages received during Sanpshot\n")
+			for i := 0; i < len(snapshot.messagesDuringSnapshot); i++ {
+				fmt.Print("  Process " + strconv.Itoa(i) + ": " + snapshot.messagesDuringSnapshot[i] + "\n")
+			}
+			fmt.Print("-------End Snapshot-------\n\n")
+
 			file.WriteString("-------Snapshot-------\n")
 			file.WriteString("Snapshot ID: " + strconv.Itoa(snapshot.snapshotId) + "\n")
 			file.WriteString("Process ID: " + strconv.Itoa(module.id) + "\n")
