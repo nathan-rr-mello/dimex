@@ -1,0 +1,10 @@
+useDIMEX-Template
+    - Linhas
+        - 222
+            - Comentar
+                - Processos não limpar o vetor de Waiting
+                    - Ou seja sempre acham que os outros estão esperando para entrar na zona crítica
+        - 217
+            - remover module.waiting[index] &&
+                - Sempre manda respOk para os outros processos, mesmo se eles não estão esperando
+    
