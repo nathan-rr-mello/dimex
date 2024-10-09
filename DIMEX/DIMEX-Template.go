@@ -140,7 +140,7 @@ func (module *DIMEX_Module) Start() {
 					module.outDbg("app libera mx")
 					module.handleUponReqExit() // ENTRADA DO ALGORITMO
 				} else if dmxR == SNAPSHOT {
-					if !module.takingSnapshot {
+					if !module.takingSnapshot && module.id == 0 {
 						module.handleUponReqSnapshot() // ENTRADA DO ALGORITMO
 					}
 				}
@@ -214,13 +214,13 @@ func (module *DIMEX_Module) handleUponReqExit() {
 	*/
 
 	for index, address := range module.addresses {
-		if module.waiting[index] && module.id != index {
+		if module.waiting[index] {
 			module.sendToLink(address, "respOK", module.addresses[module.id])
 		}
 	}
 
-	module.st = noMX
 	clear(module.waiting)
+	module.st = noMX
 }
 
 func (module *DIMEX_Module) handleUponReqSnapshot() {
@@ -232,7 +232,6 @@ func (module *DIMEX_Module) handleUponReqSnapshot() {
 		waiting:                module.waiting,
 		messagesDuringSnapshot: make([]string, len(module.addresses)),
 	}
-	module.nextSnapshotId++
 	for index, address := range module.addresses {
 		if module.id != index {
 			message := fmt.Sprintf("from:%d msgType:%s timestamp:%d", module.id, "takeSnapshot", module.reqTs)
@@ -288,12 +287,10 @@ func (module *DIMEX_Module) handleUponDeliverReqEntry(msgOutro PP2PLink.PP2PLink
 		return
 	}
 
-	if module.st == noMX || (module.st == wantMX && before(otherId, otherTs, module.id, module.reqTs)) { //se o processo nao quer a mx ou o outro tem prioridade
+	if module.st == noMX || (module.st == wantMX && (module.reqTs > otherTs || (module.reqTs == otherTs && module.id > otherId))) { //se o processo nao quer a mx ou o outro tem prioridade
 		module.sendToLink(module.addresses[otherId], "respOK", module.addresses[module.id])
-
-	} else if module.st == inMX || (module.st == wantMX && before(module.id, module.reqTs, otherId, otherTs)) { //se o processo está na mx ou se tem prioridade
+	} else if module.st == inMX || (module.st == wantMX && (module.reqTs < otherTs || (module.reqTs == otherTs && module.id < otherId))) { //se o processo está na mx ou se tem prioridade
 		module.waiting[otherId] = true
-
 	}
 
 	module.lcl = max(module.lcl, otherTs)
@@ -335,6 +332,7 @@ func (module *DIMEX_Module) handleUponDeliveryReqSnapshot(msgOutro PP2PLink.PP2P
 			file.WriteString("-------End Snapshot-------\n\n")
 			module.takingSnapshot = false
 			module.snapshotReceived = make([]bool, len(module.addresses))
+			module.nextSnapshotId++
 		}
 	} else {
 		module.snapshotReceived[fromId] = true

@@ -50,7 +50,7 @@ func main() {
 	addresses := os.Args[2:]
 	// fmt.Print("id: ", id, "   ") fmt.Println(addresses)
 
-	var dmx *DIMEX.DIMEX_Module = DIMEX.NewDIMEX(addresses, id, true)
+	var dmx *DIMEX.DIMEX_Module = DIMEX.NewDIMEX(addresses, id, false)
 	fmt.Println(dmx)
 
 	// abre arquivo que TODOS processos devem poder usar
@@ -67,14 +67,14 @@ func main() {
 
 	for {
 		// MANDA FAZER UM SNAPSHOT A CADA 10 ms e apenas o processo 0 pode mandar fazer snapshot
-		if time.Since(lastTime) > 10*time.Millisecond && id == 0 {
+		if time.Since(lastTime) > 50*time.Millisecond && id == 0 {
 			lastTime = time.Now()
-			fmt.Println("[ APP id: ", id, " FAZ SNAPSHOT ]")
+			// fmt.Println("[ APP id: ", id, " FAZ SNAPSHOT ]")
 			dmx.Req <- DIMEX.SNAPSHOT
 		}
 
 		// SOLICITA ACESSO AO DIMEX
-		fmt.Println("[ APP id: ", id, " PEDE   MX ]")
+		// fmt.Println("[ APP id: ", id, " PEDE   MX ]")
 		dmx.Req <- DIMEX.ENTER
 		//fmt.Println("[ APP id: ", id, " ESPERA MX ]")
 		// ESPERA LIBERACAO DO MODULO DIMEX
@@ -87,7 +87,7 @@ func main() {
 			return
 		}
 
-		fmt.Println("[ APP id: ", id, " *EM*   MX ]")
+		// fmt.Println("[ APP id: ", id, " *EM*   MX ]")
 
 		_, err = file.WriteString(".") // marca saida no arquivo
 		if err != nil {
@@ -97,6 +97,6 @@ func main() {
 
 		// AGORA VAI LIBERAR O ARQUIVO PARA OUTROS
 		dmx.Req <- DIMEX.EXIT //
-		fmt.Println("[ APP id: ", id, " FORA   MX ]")
+		// fmt.Println("[ APP id: ", id, " FORA   MX ]")
 	}
 }
