@@ -63,22 +63,30 @@ type dmxResp struct { // mensagem do módulo DIMEX infrmando que pode acessar - 
 }
 
 type DIMEX_Module struct {
-	Req                    chan dmxReq  // canal para receber pedidos da aplicacao (REQ e EXIT)
-	Ind                    chan dmxResp // canal para informar aplicacao que pode acessar
-	addresses              []string     // endereco de todos, na mesma ordem
-	id                     int          // identificador do processo - é o indice no array de enderecos acima
-	st                     State        // estado deste processo na exclusao mutua distribuida
-	waiting                []bool       // processos aguardando tem flag true
-	lcl                    int          // relogio logico local
-	reqTs                  int          // timestamp local da ultima requisicao deste processo
-	nbrResps               int
-	dbg                    bool
-	takingSnapshot         bool
-	messagesDuringSnapshot []string
-	snapshotReceived       []bool
-	snapshotId             int
+	Req              chan dmxReq  // canal para receber pedidos da aplicacao (REQ e EXIT)
+	Ind              chan dmxResp // canal para informar aplicacao que pode acessar
+	addresses        []string     // endereco de todos, na mesma ordem
+	id               int          // identificador do processo - é o indice no array de enderecos acima
+	st               State        // estado deste processo na exclusao mutua distribuida
+	waiting          []bool       // processos aguardando tem flag true
+	lcl              int          // relogio logico local
+	reqTs            int          // timestamp local da ultima requisicao deste processo
+	nbrResps         int
+	dbg              bool
+	takingSnapshot   bool
+	snapshotReceived []bool
+	nextSnapshotId   int
+	snapshot         Snapshot
 
 	Pp2plink *PP2PLink.PP2PLink // acesso aa comunicacao enviar por PP2PLinq.Req  e receber por PP2PLinq.Ind
+}
+
+type Snapshot struct {
+	snapshotId             int
+	lcl                    int
+	st                     State
+	waiting                []bool
+	messagesDuringSnapshot []string
 }
 
 // ------------------------------------------------------------------------------------
@@ -93,17 +101,16 @@ func NewDIMEX(_addresses []string, _id int, _dbg bool) *DIMEX_Module {
 		Req: make(chan dmxReq, 1),
 		Ind: make(chan dmxResp, 1),
 
-		addresses:              _addresses,
-		id:                     _id,
-		st:                     noMX,
-		waiting:                make([]bool, len(_addresses)),
-		lcl:                    0,
-		reqTs:                  0,
-		dbg:                    _dbg,
-		takingSnapshot:         false,
-		messagesDuringSnapshot: make([]string, len(_addresses)),
-		snapshotReceived:       make([]bool, len(_addresses)),
-		snapshotId:             0,
+		addresses:        _addresses,
+		id:               _id,
+		st:               noMX,
+		waiting:          make([]bool, len(_addresses)),
+		lcl:              0,
+		reqTs:            0,
+		dbg:              _dbg,
+		takingSnapshot:   false,
+		snapshotReceived: make([]bool, len(_addresses)),
+		nextSnapshotId:   0,
 
 		Pp2plink: p2p}
 
@@ -156,9 +163,8 @@ func (module *DIMEX_Module) Start() {
 					if !strings.Contains(msgOutro.Message, "takeSnapshot") {
 						var fromId int
 						fmt.Sscanf(msgOutro.Message, "from:%d msgType:%s timestamp:%d", &fromId, new(string), new(string))
-						fmt.Println("Received message from process ", fromId, " during snapshot", !module.snapshotReceived[fromId], module.snapshotId)
 						if !module.snapshotReceived[fromId] {
-							module.messagesDuringSnapshot[fromId] = module.messagesDuringSnapshot[fromId] + ", " + msgOutro.Message
+							module.snapshot.messagesDuringSnapshot[fromId] = module.snapshot.messagesDuringSnapshot[fromId] + ", " + msgOutro.Message
 						}
 					}
 				}
@@ -219,8 +225,14 @@ func (module *DIMEX_Module) handleUponReqExit() {
 
 func (module *DIMEX_Module) handleUponReqSnapshot() {
 	module.takingSnapshot = true
-	//TODO: Ver se as infos como, lcl, st, waiting tem que ser gravadas no snapshot antes ou depois
-	//de receber as mensagens de take snapshot dos outros processos
+	module.snapshot = Snapshot{
+		snapshotId:             module.nextSnapshotId,
+		lcl:                    module.lcl,
+		st:                     module.st,
+		waiting:                module.waiting,
+		messagesDuringSnapshot: make([]string, len(module.addresses)),
+	}
+	module.nextSnapshotId++
 	for index, address := range module.addresses {
 		if module.id != index {
 			message := fmt.Sprintf("from:%d msgType:%s timestamp:%d", module.id, "takeSnapshot", module.reqTs)
@@ -248,8 +260,8 @@ func (module *DIMEX_Module) handleUponDeliverRespOk(msgOutro PP2PLink.PP2PLink_I
 
 	module.nbrResps++
 	if module.nbrResps == len(module.addresses)-1 { //todos os outros processos responderam
-		module.st = inMX
 		module.Ind <- dmxResp{}
+		module.st = inMX
 	}
 }
 
@@ -303,6 +315,7 @@ func (module *DIMEX_Module) handleUponDeliveryReqSnapshot(msgOutro PP2PLink.PP2P
 			}
 		}
 		if allReceived {
+			snapshot := module.snapshot
 			file, err := os.OpenFile("snapshot"+strconv.Itoa(module.id)+".txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 			if err != nil {
 				fmt.Println("Error creating file:", err)
@@ -310,19 +323,17 @@ func (module *DIMEX_Module) handleUponDeliveryReqSnapshot(msgOutro PP2PLink.PP2P
 			}
 			defer file.Close()
 			file.WriteString("-------Snapshot-------\n")
-			file.WriteString("Snapshot ID: " + strconv.Itoa(module.snapshotId) + "\n")
+			file.WriteString("Snapshot ID: " + strconv.Itoa(snapshot.snapshotId) + "\n")
 			file.WriteString("Process ID: " + strconv.Itoa(module.id) + "\n")
-			file.WriteString("lcl: " + strconv.Itoa(module.lcl) + "\n")
-			file.WriteString("Status: " + module.st.String() + "\n")
-			file.WriteString("Waiting: " + fmt.Sprint(module.waiting) + "\n")
+			file.WriteString("lcl: " + strconv.Itoa(snapshot.lcl) + "\n")
+			file.WriteString("Status: " + snapshot.st.String() + "\n")
+			file.WriteString("Waiting: " + fmt.Sprint(snapshot.waiting) + "\n")
 			file.WriteString("Messages received during Sanpshot\n")
-			for i := 0; i < len(module.messagesDuringSnapshot); i++ {
-				file.WriteString("  Process " + strconv.Itoa(i) + ": " + module.messagesDuringSnapshot[i] + "\n")
+			for i := 0; i < len(snapshot.messagesDuringSnapshot); i++ {
+				file.WriteString("  Process " + strconv.Itoa(i) + ": " + snapshot.messagesDuringSnapshot[i] + "\n")
 			}
 			file.WriteString("-------End Snapshot-------\n\n")
-			module.snapshotId++
 			module.takingSnapshot = false
-			module.messagesDuringSnapshot = make([]string, len(module.addresses))
 			module.snapshotReceived = make([]bool, len(module.addresses))
 		}
 	} else {
