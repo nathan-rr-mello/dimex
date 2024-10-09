@@ -214,7 +214,7 @@ func (module *DIMEX_Module) handleUponReqExit() {
 	*/
 
 	for index, address := range module.addresses {
-		if module.waiting[index] {
+		if module.waiting[index] && index != module.id {
 			module.sendToLink(address, "respOK", module.addresses[module.id])
 		}
 	}
@@ -225,11 +225,13 @@ func (module *DIMEX_Module) handleUponReqExit() {
 
 func (module *DIMEX_Module) handleUponReqSnapshot() {
 	module.takingSnapshot = true
+	waitingCopy := make([]bool, len(module.waiting))
+	copy(waitingCopy, module.waiting)
 	module.snapshot = Snapshot{
 		snapshotId:             module.nextSnapshotId,
 		lcl:                    module.lcl,
 		st:                     module.st,
-		waiting:                module.waiting,
+		waiting:                waitingCopy,
 		messagesDuringSnapshot: make([]string, len(module.addresses)),
 	}
 	for index, address := range module.addresses {

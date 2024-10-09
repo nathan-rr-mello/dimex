@@ -1,7 +1,7 @@
 -------Snapshot-------
 Snapshot ID: 0
 Process ID: 0
-lcl: 78
+lcl: 451
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -13,7 +13,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 1
 Process ID: 0
-lcl: 146
+lcl: 468
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -25,7 +25,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 2
 Process ID: 0
-lcl: 311
+lcl: 478
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -37,7 +37,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 3
 Process ID: 0
-lcl: 467
+lcl: 490
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -49,7 +49,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 4
 Process ID: 0
-lcl: 583
+lcl: 494
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -61,7 +61,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 5
 Process ID: 0
-lcl: 724
+lcl: 510
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -73,7 +73,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 6
 Process ID: 0
-lcl: 863
+lcl: 520
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -85,7 +85,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 7
 Process ID: 0
-lcl: 988
+lcl: 524
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -97,7 +97,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 8
 Process ID: 0
-lcl: 1101
+lcl: 532
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -109,19 +109,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 9
 Process ID: 0
-lcl: 1259
+lcl: 539
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:540
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 10
 Process ID: 0
-lcl: 1433
+lcl: 544
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -133,7 +133,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 11
 Process ID: 0
-lcl: 1619
+lcl: 548
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -145,7 +145,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 12
 Process ID: 0
-lcl: 1783
+lcl: 554
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -157,7 +157,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 13
 Process ID: 0
-lcl: 1804
+lcl: 558
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -169,7 +169,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 14
 Process ID: 0
-lcl: 1886
+lcl: 564
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -181,7 +181,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 15
 Process ID: 0
-lcl: 2008
+lcl: 575
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -193,31 +193,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 16
 Process ID: 0
-lcl: 2083
+lcl: 585
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:586
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 17
 Process ID: 0
-lcl: 2189
+lcl: 590
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:591
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 18
 Process ID: 0
-lcl: 2312
+lcl: 593
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -229,7 +229,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 19
 Process ID: 0
-lcl: 2409
+lcl: 606
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -241,7 +241,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 20
 Process ID: 0
-lcl: 2439
+lcl: 612
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -253,7 +253,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 21
 Process ID: 0
-lcl: 2470
+lcl: 623
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -265,7 +265,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 22
 Process ID: 0
-lcl: 2527
+lcl: 633
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -277,19 +277,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 23
 Process ID: 0
-lcl: 2575
+lcl: 643
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:644
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 24
 Process ID: 0
-lcl: 2652
+lcl: 650
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -301,19 +301,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 25
 Process ID: 0
-lcl: 2774
+lcl: 657
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:659
+  Process 2: , from:2 msgType:reqEntry timestamp:658
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 26
 Process ID: 0
-lcl: 2867
+lcl: 661
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -325,7 +325,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 27
 Process ID: 0
-lcl: 2999
+lcl: 667
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -337,31 +337,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 28
 Process ID: 0
-lcl: 3147
+lcl: 681
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:682
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 29
 Process ID: 0
-lcl: 3337
+lcl: 707
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:708
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 30
 Process ID: 0
-lcl: 3512
+lcl: 721
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -373,67 +373,67 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 31
 Process ID: 0
-lcl: 3676
+lcl: 723
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:723
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 32
 Process ID: 0
-lcl: 3859
+lcl: 726
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:727
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 33
 Process ID: 0
-lcl: 4057
+lcl: 739
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:740
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 34
 Process ID: 0
-lcl: 4252
+lcl: 761
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:763
+  Process 2: , from:2 msgType:reqEntry timestamp:762
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 35
 Process ID: 0
-lcl: 4423
+lcl: 768
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:769
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 36
 Process ID: 0
-lcl: 4440
+lcl: 774
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -445,7 +445,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 37
 Process ID: 0
-lcl: 4504
+lcl: 782
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -457,31 +457,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 38
 Process ID: 0
-lcl: 4692
+lcl: 802
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:803
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 39
 Process ID: 0
-lcl: 4829
+lcl: 816
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:817
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 40
 Process ID: 0
-lcl: 5013
+lcl: 823
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -493,7 +493,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 41
 Process ID: 0
-lcl: 5203
+lcl: 829
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -505,7 +505,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 42
 Process ID: 0
-lcl: 5400
+lcl: 834
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -517,7 +517,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 43
 Process ID: 0
-lcl: 5527
+lcl: 837
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -529,7 +529,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 44
 Process ID: 0
-lcl: 5667
+lcl: 843
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -541,7 +541,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 45
 Process ID: 0
-lcl: 5865
+lcl: 851
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -553,7 +553,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 46
 Process ID: 0
-lcl: 6036
+lcl: 861
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -565,31 +565,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 47
 Process ID: 0
-lcl: 6192
+lcl: 871
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:872
+  Process 2: , from:2 msgType:reqEntry timestamp:873
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 48
 Process ID: 0
-lcl: 6359
+lcl: 885
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:886
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 49
 Process ID: 0
-lcl: 6488
+lcl: 909
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -601,7 +601,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 50
 Process ID: 0
-lcl: 6678
+lcl: 927
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -613,31 +613,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 51
 Process ID: 0
-lcl: 6862
+lcl: 948
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:949
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 52
 Process ID: 0
-lcl: 7053
+lcl: 972
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:973
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 53
 Process ID: 0
-lcl: 7260
+lcl: 975
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -649,67 +649,67 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 54
 Process ID: 0
-lcl: 7435
+lcl: 984
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:986
+  Process 2: , from:2 msgType:reqEntry timestamp:985
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 55
 Process ID: 0
-lcl: 7610
+lcl: 998
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:999
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 56
 Process ID: 0
-lcl: 7800
+lcl: 1001
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1002
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 57
 Process ID: 0
-lcl: 8000
+lcl: 1007
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1008
+  Process 2: , from:2 msgType:reqEntry timestamp:1009
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 58
 Process ID: 0
-lcl: 8210
+lcl: 1018
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1019
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 59
 Process ID: 0
-lcl: 8283
+lcl: 1023
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -721,7 +721,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 60
 Process ID: 0
-lcl: 8324
+lcl: 1028
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -733,19 +733,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 61
 Process ID: 0
-lcl: 8480
+lcl: 1047
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1048
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 62
 Process ID: 0
-lcl: 8627
+lcl: 1069
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -757,7 +757,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 63
 Process ID: 0
-lcl: 8821
+lcl: 1082
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -769,7 +769,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 64
 Process ID: 0
-lcl: 9048
+lcl: 1088
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -781,7 +781,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 65
 Process ID: 0
-lcl: 9287
+lcl: 1100
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -793,7 +793,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 66
 Process ID: 0
-lcl: 9441
+lcl: 1106
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -805,19 +805,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 67
 Process ID: 0
-lcl: 9555
+lcl: 1112
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1113
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 68
 Process ID: 0
-lcl: 9677
+lcl: 1125
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -829,19 +829,19 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 69
 Process ID: 0
-lcl: 9867
+lcl: 1135
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1136
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 70
 Process ID: 0
-lcl: 10022
+lcl: 1143
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -853,31 +853,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 71
 Process ID: 0
-lcl: 10200
+lcl: 1160
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1161
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 72
 Process ID: 0
-lcl: 10368
+lcl: 1168
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1169
+  Process 2: , from:2 msgType:reqEntry timestamp:1170
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 73
 Process ID: 0
-lcl: 10565
+lcl: 1180
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -889,7 +889,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 74
 Process ID: 0
-lcl: 10785
+lcl: 1183
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -901,55 +901,55 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 75
 Process ID: 0
-lcl: 11058
+lcl: 1186
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:11059
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 76
 Process ID: 0
-lcl: 11356
+lcl: 1188
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1188
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 77
 Process ID: 0
-lcl: 11648
+lcl: 1194
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1195
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 78
 Process ID: 0
-lcl: 11916
+lcl: 1206
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1208
+  Process 2: , from:2 msgType:reqEntry timestamp:1207
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 79
 Process ID: 0
-lcl: 12209
+lcl: 1211
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -961,7 +961,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 80
 Process ID: 0
-lcl: 12514
+lcl: 1222
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -973,43 +973,43 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 81
 Process ID: 0
-lcl: 12774
+lcl: 1234
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1235
+  Process 2: , from:2 msgType:reqEntry timestamp:1234
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 82
 Process ID: 0
-lcl: 12806
+lcl: 1238
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:12807
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 83
 Process ID: 0
-lcl: 12815
+lcl: 1263
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1264
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 84
 Process ID: 0
-lcl: 13003
+lcl: 1298
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1021,91 +1021,91 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 85
 Process ID: 0
-lcl: 13207
+lcl: 1334
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1335
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 86
 Process ID: 0
-lcl: 13454
+lcl: 1359
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1360
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 87
 Process ID: 0
-lcl: 13708
+lcl: 1390
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1392
+  Process 2: , from:2 msgType:reqEntry timestamp:1391
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 88
 Process ID: 0
-lcl: 14011
+lcl: 1448
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1449
+  Process 2: , from:2 msgType:reqEntry timestamp:1450
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 89
 Process ID: 0
-lcl: 14288
+lcl: 1506
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1508
+  Process 2: , from:2 msgType:reqEntry timestamp:1507
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 90
 Process ID: 0
-lcl: 14566
+lcl: 1521
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1522
+  Process 2: , from:2 msgType:reqEntry timestamp:1522
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 91
 Process ID: 0
-lcl: 14866
+lcl: 1539
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1540
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 92
 Process ID: 0
-lcl: 15187
+lcl: 1570
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1117,19 +1117,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 93
 Process ID: 0
-lcl: 15473
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:15474
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 94
-Process ID: 0
-lcl: 15741
+lcl: 1596
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1139,9 +1127,21 @@ Messages received during Sanpshot
 -------End Snapshot-------
 
 -------Snapshot-------
+Snapshot ID: 94
+Process ID: 0
+lcl: 1613
+Status: noMX
+Waiting: [false false false]
+Messages received during Sanpshot
+  Process 0: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1615
+  Process 2: , from:2 msgType:reqEntry timestamp:1614
+-------End Snapshot-------
+
+-------Snapshot-------
 Snapshot ID: 95
 Process ID: 0
-lcl: 15933
+lcl: 1633
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1153,67 +1153,67 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 96
 Process ID: 0
-lcl: 16186
+lcl: 1668
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:16187
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1669
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 97
 Process ID: 0
-lcl: 16459
+lcl: 1677
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1678
+  Process 2: , from:2 msgType:reqEntry timestamp:1679
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 98
 Process ID: 0
-lcl: 16711
+lcl: 1689
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:16712
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1691
+  Process 2: , from:2 msgType:reqEntry timestamp:1690
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 99
 Process ID: 0
-lcl: 16955
+lcl: 1701
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1702
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 100
 Process ID: 0
-lcl: 17240
+lcl: 1712
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1713
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 101
 Process ID: 0
-lcl: 17527
+lcl: 1724
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1225,43 +1225,43 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 102
 Process ID: 0
-lcl: 17779
+lcl: 1734
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:17780
+  Process 1: , from:1 msgType:reqEntry timestamp:1735
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 103
 Process ID: 0
-lcl: 18060
+lcl: 1741
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:18061
+  Process 1: , from:1 msgType:reqEntry timestamp:1742
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 104
 Process ID: 0
-lcl: 18338
+lcl: 1764
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1766
+  Process 2: , from:2 msgType:reqEntry timestamp:1765
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 105
 Process ID: 0
-lcl: 18396
+lcl: 1810
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1273,55 +1273,55 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 106
 Process ID: 0
-lcl: 18514
+lcl: 1816
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1817
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 107
 Process ID: 0
-lcl: 18686
+lcl: 1845
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:1846
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 108
 Process ID: 0
-lcl: 18879
+lcl: 1877
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1878
+  Process 2: , from:2 msgType:reqEntry timestamp:1878
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 109
 Process ID: 0
-lcl: 19080
+lcl: 1894
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:19081
+  Process 1: , from:1 msgType:reqEntry timestamp:1895
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 110
 Process ID: 0
-lcl: 19316
+lcl: 1905
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1333,9 +1333,9 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 111
 Process ID: 0
-lcl: 19511
+lcl: 1928
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
@@ -1345,79 +1345,79 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 112
 Process ID: 0
-lcl: 19635
+lcl: 1930
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:19636
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1931
+  Process 2: , from:2 msgType:reqEntry timestamp:1932
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 113
 Process ID: 0
-lcl: 19789
+lcl: 1935
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:19790
+  Process 1: , from:1 msgType:reqEntry timestamp:1936
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 114
 Process ID: 0
-lcl: 19990
+lcl: 1947
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:19991
+  Process 1: , from:1 msgType:reqEntry timestamp:1948
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 115
 Process ID: 0
-lcl: 20159
+lcl: 1949
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:20160
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 116
 Process ID: 0
-lcl: 20289
+lcl: 1952
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:20290
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:1953
+  Process 2: , from:2 msgType:reqEntry timestamp:1953
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 117
 Process ID: 0
-lcl: 20449
+lcl: 1957
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:20450
+  Process 1: , from:1 msgType:reqEntry timestamp:1956
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 118
 Process ID: 0
-lcl: 20632
+lcl: 1966
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1429,7 +1429,7 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 119
 Process ID: 0
-lcl: 20837
+lcl: 1971
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1441,31 +1441,31 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 120
 Process ID: 0
-lcl: 21054
+lcl: 1982
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:21055
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 121
 Process ID: 0
-lcl: 21284
+lcl: 1993
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:21285
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 122
 Process ID: 0
-lcl: 21528
+lcl: 1999
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1477,451 +1477,451 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 123
 Process ID: 0
-lcl: 21744
+lcl: 2005
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:21744
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 124
 Process ID: 0
-lcl: 21978
+lcl: 2013
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:21979
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 125
 Process ID: 0
-lcl: 22210
+lcl: 2021
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:22211
+  Process 1: , from:1 msgType:reqEntry timestamp:2022
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 126
 Process ID: 0
-lcl: 22440
+lcl: 2032
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:22441
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 127
 Process ID: 0
-lcl: 22647
+lcl: 2050
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:22648
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 128
 Process ID: 0
-lcl: 22763
+lcl: 2074
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:22764
-  Process 2: , from:2 msgType:reqEntry timestamp:22765
+  Process 1: , from:1 msgType:reqEntry timestamp:2075
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 129
 Process ID: 0
-lcl: 22858
+lcl: 2095
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:22859
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 130
 Process ID: 0
-lcl: 22970
+lcl: 2115
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:22971
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 131
 Process ID: 0
-lcl: 23191
+lcl: 2135
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:23192
+  Process 1: , from:1 msgType:reqEntry timestamp:2136
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 132
 Process ID: 0
-lcl: 23406
+lcl: 2146
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:23407
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 133
 Process ID: 0
-lcl: 23532
+lcl: 2159
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:23533
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 134
 Process ID: 0
-lcl: 23652
+lcl: 2171
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:23653
+  Process 1: , from:1 msgType:reqEntry timestamp:2172
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 135
 Process ID: 0
-lcl: 23790
+lcl: 2215
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:23791
+  Process 1: , from:1 msgType:reqEntry timestamp:2216
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 136
 Process ID: 0
-lcl: 23906
+lcl: 2236
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:23907
+  Process 1: , from:1 msgType:reqEntry timestamp:2237
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 137
 Process ID: 0
-lcl: 24082
+lcl: 2258
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:24083
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 138
 Process ID: 0
-lcl: 24256
+lcl: 2286
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:24257
+  Process 1: , from:1 msgType:reqEntry timestamp:2287
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 139
 Process ID: 0
-lcl: 24434
+lcl: 2310
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:24435
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2312
+  Process 2: , from:2 msgType:reqEntry timestamp:2311
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 140
 Process ID: 0
-lcl: 24598
+lcl: 2348
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:24599
-  Process 2: , from:2 msgType:reqEntry timestamp:24599
+  Process 1: , from:1 msgType:reqEntry timestamp:2349
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 141
 Process ID: 0
-lcl: 24782
+lcl: 2378
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:24783
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 142
 Process ID: 0
-lcl: 24992
+lcl: 2422
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:24993
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2423
+  Process 2: , from:2 msgType:reqEntry timestamp:2424
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 143
 Process ID: 0
-lcl: 25157
+lcl: 2478
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:25158
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 144
 Process ID: 0
-lcl: 25205
+lcl: 2505
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:25206
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 145
 Process ID: 0
-lcl: 25321
+lcl: 2522
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:25322
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2523
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 146
 Process ID: 0
-lcl: 25461
+lcl: 2548
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:25462
+  Process 1: , from:1 msgType:reqEntry timestamp:2549
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 147
 Process ID: 0
-lcl: 25619
+lcl: 2568
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:25620
+  Process 2: , from:2 msgType:reqEntry timestamp:2568
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 148
 Process ID: 0
-lcl: 25735
+lcl: 2575
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:25736
-  Process 2: , from:2 msgType:reqEntry timestamp:25736
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 149
 Process ID: 0
-lcl: 25909
+lcl: 2598
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:25910
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 150
 Process ID: 0
-lcl: 26078
+lcl: 2615
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:26079
-  Process 2: , from:2 msgType:reqEntry timestamp:26079
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 151
 Process ID: 0
-lcl: 26272
+lcl: 2625
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:26273
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 152
 Process ID: 0
-lcl: 26442
+lcl: 2649
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:26443
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 153
 Process ID: 0
-lcl: 26627
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:26628
-  Process 2: , from:2 msgType:reqEntry timestamp:26628
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 154
-Process ID: 0
-lcl: 26833
+lcl: 2669
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:26833
+  Process 2: , from:2 msgType:reqEntry timestamp:2670
+-------End Snapshot-------
+
+-------Snapshot-------
+Snapshot ID: 154
+Process ID: 0
+lcl: 2680
+Status: noMX
+Waiting: [false false false]
+Messages received during Sanpshot
+  Process 0: 
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 155
 Process ID: 0
-lcl: 27018
+lcl: 2687
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:27019
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2687
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 156
 Process ID: 0
-lcl: 27171
+lcl: 2706
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:27172
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2707
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 157
 Process ID: 0
-lcl: 27330
+lcl: 2725
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:27331
-  Process 2: , from:2 msgType:reqEntry timestamp:27332
+  Process 1: , from:1 msgType:reqEntry timestamp:2725
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 158
 Process ID: 0
-lcl: 27337
+lcl: 2734
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2735
+  Process 2: , from:2 msgType:reqEntry timestamp:2735
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 159
 Process ID: 0
-lcl: 27346
+lcl: 2746
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2746
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 160
 Process ID: 0
-lcl: 27396
+lcl: 2759
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -1933,67 +1933,79 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 161
 Process ID: 0
-lcl: 27498
+lcl: 2774
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:27499
+  Process 2: , from:2 msgType:reqEntry timestamp:2775
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 162
 Process ID: 0
-lcl: 27611
+lcl: 2796
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:27612
-  Process 2: , from:2 msgType:reqEntry timestamp:27612
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2797
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 163
 Process ID: 0
-lcl: 27740
+lcl: 2817
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:27741
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2818
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 164
 Process ID: 0
-lcl: 27886
+lcl: 2873
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:27887
+  Process 2: , from:2 msgType:reqEntry timestamp:2874
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 165
 Process ID: 0
-lcl: 28055
+lcl: 2907
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:28056
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 166
 Process ID: 0
-lcl: 28240
+lcl: 2910
+Status: noMX
+Waiting: [false false false]
+Messages received during Sanpshot
+  Process 0: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2911
+  Process 2: 
+-------End Snapshot-------
+
+-------Snapshot-------
+Snapshot ID: 167
+Process ID: 0
+lcl: 2913
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -2003,177 +2015,165 @@ Messages received during Sanpshot
 -------End Snapshot-------
 
 -------Snapshot-------
-Snapshot ID: 167
+Snapshot ID: 168
 Process ID: 0
-lcl: 28442
+lcl: 2926
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:28443
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 168
-Process ID: 0
-lcl: 28656
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:28657
-  Process 2: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2927
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 169
 Process ID: 0
-lcl: 28877
+lcl: 2965
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:28878
+  Process 1: , from:1 msgType:reqEntry timestamp:2965
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 170
 Process ID: 0
-lcl: 29081
+lcl: 2976
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:29082
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:2977
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 171
 Process ID: 0
-lcl: 29247
+lcl: 2990
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:29248
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:2992
+  Process 2: , from:2 msgType:reqEntry timestamp:2991
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 172
 Process ID: 0
-lcl: 29444
+lcl: 2992
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:29445
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 173
 Process ID: 0
-lcl: 29683
+lcl: 2994
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:29684
+  Process 1: , from:1 msgType:reqEntry timestamp:2995
+  Process 2: , from:2 msgType:reqEntry timestamp:2996
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 174
 Process ID: 0
-lcl: 29927
+lcl: 2997
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:29928
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 175
 Process ID: 0
-lcl: 30141
+lcl: 3006
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:30142
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 176
 Process ID: 0
-lcl: 30361
+lcl: 3014
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:30362
+  Process 1: , from:1 msgType:reqEntry timestamp:3015
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 177
 Process ID: 0
-lcl: 30594
+lcl: 3015
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:30595
-  Process 2: 
+  Process 1: , from:1 msgType:reqEntry timestamp:3017
+  Process 2: , from:2 msgType:reqEntry timestamp:3016
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 178
 Process ID: 0
-lcl: 30818
+lcl: 3029
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:30819
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 179
 Process ID: 0
-lcl: 31029
+lcl: 3032
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:31030
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 180
 Process ID: 0
-lcl: 31181
+lcl: 3038
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:31182
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:3039
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 181
 Process ID: 0
-lcl: 31204
+lcl: 3043
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
@@ -2185,720 +2185,264 @@ Messages received during Sanpshot
 -------Snapshot-------
 Snapshot ID: 182
 Process ID: 0
-lcl: 31292
+lcl: 3052
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:31293
-  Process 2: , from:2 msgType:reqEntry timestamp:31293
+  Process 1: , from:1 msgType:reqEntry timestamp:3053
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 183
 Process ID: 0
-lcl: 31480
+lcl: 3084
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:31481
+  Process 1: , from:1 msgType:reqEntry timestamp:3084
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 184
 Process ID: 0
-lcl: 31632
+lcl: 3090
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:31633
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 185
 Process ID: 0
-lcl: 31819
+lcl: 3099
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:31820
-  Process 2: , from:2 msgType:reqEntry timestamp:31821
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 186
 Process ID: 0
-lcl: 32017
+lcl: 3102
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:32018
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 187
 Process ID: 0
-lcl: 32227
+lcl: 3106
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
   Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:32228
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 188
 Process ID: 0
-lcl: 32461
+lcl: 3108
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:32462
-  Process 2: , from:2 msgType:reqEntry timestamp:32462
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 189
 Process ID: 0
-lcl: 32677
+lcl: 3111
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:32678
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 190
 Process ID: 0
-lcl: 32903
+lcl: 3114
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:32904
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 191
 Process ID: 0
-lcl: 33130
+lcl: 3117
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:33131
-  Process 2: , from:2 msgType:reqEntry timestamp:33132
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 192
 Process ID: 0
-lcl: 33365
+lcl: 3125
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:33366
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 193
 Process ID: 0
-lcl: 33566
+lcl: 3128
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:33567
+  Process 1: , from:1 msgType:reqEntry timestamp:3129
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 194
 Process ID: 0
-lcl: 33716
+lcl: 3129
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:33717
-  Process 2: 
+  Process 1: 
+  Process 2: , from:2 msgType:reqEntry timestamp:3130
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 195
 Process ID: 0
-lcl: 33910
+lcl: 3133
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:33911
-  Process 2: , from:2 msgType:reqEntry timestamp:33911
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 196
 Process ID: 0
-lcl: 34108
+lcl: 3136
 Status: noMX
-Waiting: [false true true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:34109
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 197
 Process ID: 0
-lcl: 34345
+lcl: 3142
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:34346
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 198
 Process ID: 0
-lcl: 34554
+lcl: 3145
 Status: noMX
-Waiting: [false false true]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:34555
-  Process 2: , from:2 msgType:reqEntry timestamp:34556
+  Process 1: 
+  Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 199
 Process ID: 0
-lcl: 34787
+lcl: 3148
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:34788
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 200
 Process ID: 0
-lcl: 35013
+lcl: 3157
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:35014
+  Process 1: 
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 201
 Process ID: 0
-lcl: 35242
+lcl: 3160
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:35243
+  Process 1: , from:1 msgType:reqEntry timestamp:3162
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 202
 Process ID: 0
-lcl: 35455
+lcl: 3163
 Status: noMX
-Waiting: [false true false]
+Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:35456
+  Process 1: , from:1 msgType:reqEntry timestamp:3164
   Process 2: 
 -------End Snapshot-------
 
 -------Snapshot-------
 Snapshot ID: 203
 Process ID: 0
-lcl: 35664
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:35665
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 204
-Process ID: 0
-lcl: 35700
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 205
-Process ID: 0
-lcl: 35720
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:35721
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 206
-Process ID: 0
-lcl: 35766
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:35767
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 207
-Process ID: 0
-lcl: 35869
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:35870
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 208
-Process ID: 0
-lcl: 36055
+lcl: 3165
 Status: noMX
 Waiting: [false false false]
 Messages received during Sanpshot
   Process 0: 
-  Process 1: 
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 209
-Process ID: 0
-lcl: 36256
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:36257
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 210
-Process ID: 0
-lcl: 36404
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:36405
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 211
-Process ID: 0
-lcl: 36576
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:36577
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 212
-Process ID: 0
-lcl: 36778
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:36779
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 213
-Process ID: 0
-lcl: 36973
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:36974
-  Process 2: , from:2 msgType:reqEntry timestamp:36974
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 214
-Process ID: 0
-lcl: 37114
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:37115
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 215
-Process ID: 0
-lcl: 37246
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:37247
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 216
-Process ID: 0
-lcl: 37380
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:37381
-  Process 2: , from:2 msgType:reqEntry timestamp:37381
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 217
-Process ID: 0
-lcl: 37534
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:37535
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 218
-Process ID: 0
-lcl: 37698
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:37699
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 219
-Process ID: 0
-lcl: 37896
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:37897
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 220
-Process ID: 0
-lcl: 38103
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 221
-Process ID: 0
-lcl: 38299
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:38300
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 222
-Process ID: 0
-lcl: 38473
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:38474
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 223
-Process ID: 0
-lcl: 38611
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:38612
-  Process 2: , from:2 msgType:reqEntry timestamp:38612
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 224
-Process ID: 0
-lcl: 38735
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:38736
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 225
-Process ID: 0
-lcl: 38894
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:38895
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 226
-Process ID: 0
-lcl: 39077
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:39078
-  Process 2: , from:2 msgType:reqEntry timestamp:39078
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 227
-Process ID: 0
-lcl: 39273
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:39274
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 228
-Process ID: 0
-lcl: 39490
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:39491
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 229
-Process ID: 0
-lcl: 39707
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:39708
-  Process 2: , from:2 msgType:reqEntry timestamp:39709
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 230
-Process ID: 0
-lcl: 39905
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:39905
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 231
-Process ID: 0
-lcl: 40147
-Status: noMX
-Waiting: [false false true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: , from:2 msgType:reqEntry timestamp:40148
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 232
-Process ID: 0
-lcl: 40387
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:40388
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 233
-Process ID: 0
-lcl: 40606
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:40607
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 234
-Process ID: 0
-lcl: 40640
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 235
-Process ID: 0
-lcl: 40657
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 236
-Process ID: 0
-lcl: 40815
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:40816
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 237
-Process ID: 0
-lcl: 40978
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:40979
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 238
-Process ID: 0
-lcl: 41183
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:41184
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 239
-Process ID: 0
-lcl: 41402
-Status: noMX
-Waiting: [false true true]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:41403
-  Process 2: , from:2 msgType:reqEntry timestamp:41404
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 240
-Process ID: 0
-lcl: 41604
-Status: noMX
-Waiting: [false true false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: , from:1 msgType:reqEntry timestamp:41605
-  Process 2: 
--------End Snapshot-------
-
--------Snapshot-------
-Snapshot ID: 241
-Process ID: 0
-lcl: 41823
-Status: noMX
-Waiting: [false false false]
-Messages received during Sanpshot
-  Process 0: 
-  Process 1: 
+  Process 1: , from:1 msgType:reqEntry timestamp:3166
   Process 2: 
 -------End Snapshot-------
 
